@@ -1,7 +1,14 @@
 import React from 'react';
 import '../App.css';
 
+import AnimalCard from '../Components/AnimalCard';
+
 class Catalog extends React.Component {
+
+
+
+
+    
     render () {
         return (
             <div>
@@ -9,7 +16,7 @@ class Catalog extends React.Component {
                 <div className="main-section catalog">
                     
                     <div className="title">
-                    <h1>Encotrá a tu próximo mejor amigo.</h1>
+                    <h1>Encontrá a tu próximo mejor amigo.</h1>
                     
                     <p>
                         <a className="btn" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Filtrar por categorías »</a>
@@ -87,6 +94,8 @@ class Catalog extends React.Component {
 
                     </div>
 
+
+                    {this.props.animals.map(item => <AnimalCard />)}
 
                     <div className="card animal-card"><a href="animal.html">
                     <img alt="" src="assets/img/helga.jpg" className="profile-pic"/>
