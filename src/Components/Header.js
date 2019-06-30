@@ -20,10 +20,10 @@ class Header extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="list.html">Animales buscando hogar<span className="sr-only">(current)</span></a>
+                        <span className="nav-link" onClick={this.goToCatalog}>Animales buscando hogar<span className="sr-only">(current)</span></span>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="App.js">Por qué Brandname</a>
+                        <span className="nav-link" onClick={this.goToWhyUs}>Por qué Brandname</span>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="App.js">Historias</a>
